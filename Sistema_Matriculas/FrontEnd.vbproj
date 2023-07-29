@@ -151,6 +151,7 @@
     <Content Include="FrmBienvenida.aspx" />
     <Content Include="FrmLogin_Registrar.aspx" />
     <Content Include="FrmLogin_Rest_Pass.aspx" />
+    <Content Include="frmPrueba.aspx" />
     <Content Include="Global.asax" />
     <Content Include="FrmLogin.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -254,6 +255,13 @@
     </Compile>
     <Compile Include="FrmLogin_Rest_Pass.aspx.vb">
       <DependentUpon>FrmLogin_Rest_Pass.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmPrueba.aspx.designer.vb">
+      <DependentUpon>frmPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrueba.aspx.vb">
+      <DependentUpon>frmPrueba.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
