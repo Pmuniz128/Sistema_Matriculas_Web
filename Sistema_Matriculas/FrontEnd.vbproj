@@ -148,7 +148,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FrmBienvenida.aspx" />
+    <Content Include="FrmLogin_Registrar.aspx" />
+    <Content Include="FrmLogin_Rest_Pass.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="FrmLogin.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -231,8 +235,36 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmBienvenida.aspx.designer.vb">
+      <DependentUpon>FrmBienvenida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBienvenida.aspx.vb">
+      <DependentUpon>FrmBienvenida.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmLogin_Registrar.aspx.designer.vb">
+      <DependentUpon>FrmLogin_Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin_Registrar.aspx.vb">
+      <DependentUpon>FrmLogin_Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmLogin_Rest_Pass.aspx.designer.vb">
+      <DependentUpon>FrmLogin_Rest_Pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin_Rest_Pass.aspx.vb">
+      <DependentUpon>FrmLogin_Rest_Pass.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.aspx.designer.vb">
+      <DependentUpon>FrmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.aspx.vb">
+      <DependentUpon>FrmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
