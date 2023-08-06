@@ -110,5 +110,11 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatosSQL\DatosSQL.vbproj">
+      <Project>{4ed6d125-7d02-4da3-a6ce-2182651e35e7}</Project>
+      <Name>DatosSQL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
