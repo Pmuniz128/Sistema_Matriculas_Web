@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -116,6 +117,10 @@
     <ProjectReference Include="..\DatosSQL\DatosSQL.vbproj">
       <Project>{4ed6d125-7d02-4da3-a6ce-2182651e35e7}</Project>
       <Name>DatosSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datos\Datos.vbproj">
+      <Project>{3081ef73-6818-4e7b-b72c-2eeeb810fabd}</Project>
+      <Name>Datos</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.vbproj">
       <Project>{d18dba2d-2f65-4c8c-9b74-56e1f8c2c0a1}</Project>

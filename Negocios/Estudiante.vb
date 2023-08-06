@@ -76,29 +76,9 @@ Public Class Estudiante
         End Set
     End Property
 
-    Public Sub Grabar(ByVal accion As Integer, estudiate As Es)
-        Dim strNombreSP As String = ""
-
-        Dim sqlParametros As New List(Of SqlParameter)
-
-        With sqlParametros
-            .Add(New SqlParameter("@Accion", accion))
-            .Add(New SqlParameter("@CodigoCarnet", estudiate.CodigoCarnet))
-            .Add(New SqlParameter("@Nombre", estudiate))
-            .Add(New SqlParameter("@PrimerApellido", estudiate))
-            .Add(New SqlParameter("@SegundoApellido", estudiate))
-            .Add(New SqlParameter("@FechaNacimiento", estudiate))
-            .Add(New SqlParameter("@CodigoProvicia", estudiate))
-            .Add(New SqlParameter("@DireccionExacta", estudiate))
-            .Add(New SqlParameter("@Telefono", estudiate))
-            .Add(New SqlParameter("@Email", estudiate))
-
-        End With
-
-        Dim iConexion As New DatosSQL.ConexionSQL
-        iConexion.EjecutarSP(strNombreSP, listaParametro)
-
-    End Sub
-
+    Public Function Leer(rutaArchivo As String) As DataTable
+        Dim iEstudiantes As New Datos.Estudiantes
+        Return iEstudiantes.Leer()
+    End Function
 
 End Class
