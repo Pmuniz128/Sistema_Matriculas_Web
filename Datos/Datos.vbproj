@@ -75,7 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArchivosXml.vb" />
-    <Compile Include="Estudiantes.vb" />
+    <Compile Include="DatosEstudiantes.vb" />
+    <Compile Include="DatosFuncionarios.vb" />
+    <Compile Include="DatosLogin.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
