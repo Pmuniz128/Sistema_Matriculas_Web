@@ -56,7 +56,7 @@
             <a class="nav-link" runat="server" id="ConfirmacionCursos" href="~/WebForms/frmConfirmacionCursos.aspx">Confirmacion de Cursos</a>
             <a class="nav-link" runat="server" id="ConsultaMaterias" href="~/WebForms/frmConsultaMaterias.aspx">Consulta de Materias</a>
             <a class="nav-link" runat="server" id="Contact" href="frmAcercaDe.aspx">Acerca de</a>
-            <%--<asp:LinkButton Visible="false" ID="lknCerrarSesion" runat="server" OnClick="lknCerrarSesion_Click">Cerrar Sesion</asp:LinkButton>--%>
+            <asp:LinkButton Visible="false" ID="lknCerrarSesion" runat="server" OnClick="lknCerrarSesion_Click">Cerrar Sesion</asp:LinkButton>
 
             <ul class="navbar-nav mr-auto">
             </ul>

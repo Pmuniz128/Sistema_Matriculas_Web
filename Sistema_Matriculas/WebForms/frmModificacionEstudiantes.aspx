@@ -1,9 +1,8 @@
-﻿<%@ Page Title="ModificaCION DE Estudiantes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="frmModificacionEstudiantes.aspx.vb" Inherits="FrondEnd.frmMantenimientoEmpleado" %>
+﻿<%@ Page Title="Modificacion de  Estudiantes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="frmModificacionEstudiantes.aspx.vb" Inherits="FrontEnd.frmModificacionEstudiantes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
       <!---Se realiza toda la parte visualy se recolecta los datos que se necesitan ---->
     <h1>Modificacion de Estudiantes</h1>
-    <!---Fila ---->
-     <div class ="row">
+
         <!---Columna--->
         <div class="col-3">
            <label for="Carnet">Carnet</label>
@@ -54,7 +53,7 @@
          <!---Columna--->
         <div class="col-3">
            <label for="Correo">Correo</label>
-           <asp:TextBox ID="txtCorreo" runat="server" placeholder="Correo Electronico" class="form-control" required ></asp:TextBox>
+           <asp:TextBox ID="txtCorreo" runat="server" placeholder="Correo Electronico" class="form-control" required ="required" ></asp:TextBox>
         </div>
     </div>
 

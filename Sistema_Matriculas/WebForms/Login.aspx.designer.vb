@@ -10,44 +10,41 @@
 Option Strict On
 Option Explicit On
 
-Namespace FrondEnd
+Partial Public Class Login
 
-    Partial Public Class Login
+    '''<summary>
+    '''txtusuario control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtusuario As Global.System.Web.UI.WebControls.TextBox
 
-        '''<summary>
-        '''txtusuario control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents txtusuario As Global.System.Web.UI.WebControls.TextBox
+    '''<summary>
+    '''txtcontrasena control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtcontrasena As Global.System.Web.UI.WebControls.TextBox
 
-        '''<summary>
-        '''txtcontrasena control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents txtcontrasena As Global.System.Web.UI.WebControls.TextBox
+    '''<summary>
+    '''ddlUsuario control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlUsuario As Global.System.Web.UI.WebControls.DropDownList
 
-        '''<summary>
-        '''ddlUsuario control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents ddlUsuario As Global.System.Web.UI.WebControls.DropDownList
-
-        '''<summary>
-        '''btnIniciar control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents btnIniciar As Global.System.Web.UI.WebControls.Button
-    End Class
-End Namespace
+    '''<summary>
+    '''btnIniciar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnIniciar As Global.System.Web.UI.WebControls.Button
+End Class
