@@ -2,22 +2,22 @@
 Imports System.Data.SqlClient
 
 Public Class Estudiantes
-    Public Sub Grabar(ByVal accion As Integer, estudiate As EstudianteEnt)
+    Public Sub Grabar(ByVal accion As Integer, estudiante As EstudianteEnt)
         Dim strNombreSP As String = "GrabarEstudiante"
 
         Dim lstParametros As New List(Of SqlParameter)
 
         With lstParametros
             .Add(New SqlParameter("@Accion", accion))
-            .Add(New SqlParameter("@CodigoCarnet", estudiate.CodigoCarnet))
-            .Add(New SqlParameter("@Nombre", estudiate.Nombre))
-            .Add(New SqlParameter("@PrimerApellido", estudiate.PrimerApellido))
-            .Add(New SqlParameter("@SegundoApellido", estudiate.SegundoApellido))
-            .Add(New SqlParameter("@FechaNacimiento", estudiate.FechaNacimiento))
-            .Add(New SqlParameter("@CodigoProvicia", estudiate.CodigoProvincia))
-            .Add(New SqlParameter("@DireccionExacta", estudiate.DireccionExacta))
-            .Add(New SqlParameter("@Telefono", estudiate.Telefono))
-            .Add(New SqlParameter("@Email", estudiate.Email))
+            .Add(New SqlParameter("@CodigoCarnet", estudiante.CodigoCarnet))
+            .Add(New SqlParameter("@Identificacion", estudiante.Identificacion))
+            .Add(New SqlParameter("@NombreCompleto", estudiante.NombreCompleto))
+            .Add(New SqlParameter("@CarrerasMatriculadas", estudiante.CarrerasMatriculadas))
+            .Add(New SqlParameter("@NumTelefono", estudiante.NumeroTelefono))
+            .Add(New SqlParameter("@Email", estudiante.Email))
+            .Add(New SqlParameter("@FechaNacimiento", estudiante.FechaNacimiento))
+            .Add(New SqlParameter("@DireccionExacta", estudiante.DireccionExacta))
+            .Add(New SqlParameter("@Beca", estudiante.Beca))
 
         End With
 

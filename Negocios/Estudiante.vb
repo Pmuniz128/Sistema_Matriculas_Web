@@ -6,75 +6,103 @@ Imports System.Data.SqlClient
 Imports Entidades
 
 Public Class Estudiante
-    Inherits Persona
 
-    Private blnTieneBeca As String
-    Public Property TieneBeca() As String
+
+#Region "Propiedades"
+    Private strCarnet As String
+    Public Property Carnet() As String
         Get
-            Return blnTieneBeca
+            Return strCarnet
         End Get
         Set(ByVal value As String)
-            blnTieneBeca = value
-        End Set
-    End Property
-
-    Private strCarreraMatriculada As String
-    Public Property CarreraMatriculada() As String
-        Get
-            Return strCarreraMatriculada
-        End Get
-        Set(ByVal value As String)
-            strCarreraMatriculada = value
+            strCarnet = value
         End Set
     End Property
 
-    Private strEmail As String
-    Public Property email() As String
+    Private strtidEstudiante As String
+    Public Property IDEstudiante() As String
         Get
-            Return strEmail
+            Return strtidEstudiante
         End Get
         Set(ByVal value As String)
-            strEmail = value
-        End Set
-    End Property
-    Private int_Telefono As Integer
-    Public Property telefono() As Integer
-        Get
-            Return int_Telefono
-        End Get
-        Set(ByVal value As Integer)
-            int_Telefono = value
+            strtidEstudiante = value
         End Set
     End Property
 
-    Private dble_porcentaje_beca As Double
-    Public Property porcentaje_Beca() As Double
+    Private strnombreCompletoEstudnt As String
+    Public Property NombreEstudiante() As String
         Get
-            Return dble_porcentaje_beca
+            Return strnombreCompletoEstudnt
         End Get
-        Set(ByVal value As Double)
-            dble_porcentaje_beca = value
+        Set(ByVal value As String)
+            strnombreCompletoEstudnt = value
         End Set
     End Property
 
-    Private strPeriodo As String
-    Public Property Periodo() As String
+    Private strcarrerasMatriculadas As String
+    Public Property CarrerasMatriculadas() As String
         Get
-            Return strPeriodo
+            Return strcarrerasMatriculadas
         End Get
         Set(ByVal value As String)
-            strPeriodo = value
+            strcarrerasMatriculadas = value
         End Set
     End Property
-    Private strCursoMatriculado As String
-    Public Property Curso_Matriculado() As String
+
+    Private strnumeroTelefono As String
+    Public Property NumeroTelefonico() As String
         Get
-            Return strCursoMatriculado
+            Return strnumeroTelefono
         End Get
         Set(ByVal value As String)
-            strCursoMatriculado = value
+            strnumeroTelefono = value
         End Set
     End Property
+
+    Private strcorreroElectronico As String
+    Public Property CorreoElectronico() As String
+        Get
+            Return strcorreroElectronico
+        End Get
+        Set(ByVal value As String)
+            strcorreroElectronico = value
+        End Set
+    End Property
+
+    Private datefechaNacimiento As Date
+    Public Property FechaNacimiento() As Date
+        Get
+            Return datefechaNacimiento
+        End Get
+        Set(ByVal value As Date)
+            datefechaNacimiento = value
+        End Set
+    End Property
+
+    Private strdireccionExacta As String
+    Public Property DireccionExacta() As String
+        Get
+            Return strdireccionExacta
+        End Get
+        Set(ByVal value As String)
+            strdireccionExacta = value
+        End Set
+    End Property
+
+    Private strbecaInfo As String
+    Public Property Beca() As String
+        Get
+            Return strbecaInfo
+        End Get
+        Set(ByVal value As String)
+            strbecaInfo = value
+        End Set
+    End Property
+#End Region
+
+#Region "Métodos"
+
+#End Region
 
     Public Function Leer(rutaArchivo As String) As DataTable
         Dim iEstudiantes As New Datos.Estudiantes
