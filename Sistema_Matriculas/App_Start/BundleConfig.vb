@@ -27,5 +27,6 @@ Public Class BundleConfig
         ' ready for production, use the build tool at https://modernizr.com to pick only the tests you need
         bundles.Add(New ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"))
+
     End Sub
 End Class

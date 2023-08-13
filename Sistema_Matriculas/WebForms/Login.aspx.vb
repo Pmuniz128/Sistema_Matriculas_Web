@@ -13,18 +13,18 @@ Public Class Login
         End If
     End Sub
     'Boton que realiza la validacion de iniciar para comparas usuarios y contrasenas
-    Public Sub btnIniciar_Click(sender As Object, e As EventArgs)
-        ''Dim strUsuario As String = txtusuario.Text
-        '' Dim strContrasena As String = txtcontrasena.Text
+    Protected Sub btnIniciar_Click(sender As Object, e As EventArgs)
+        Dim strUsuario As String = txtusuario.Text
+        Dim strContrasena As String = txtcontrasena.Text
 
         Dim eUsuario As New Entidades.Usuarios
         Dim iSeguridad As New Negocios.Seguridad
 
-        '' eUsuario = iSeguridad.validarLogin(strUsuario, strContrasena)
+        eUsuario = iSeguridad.validarLogin(strUsuario, strContrasena)
 
         If eUsuario.validarCredencial Then
             Session("Usuario") = eUsuario
-            ''FormsAuthentication.RedirectFromLoginPage(strUsuario, False)
+            FormsAuthentication.RedirectFromLoginPage(strUsuario, False)
 
 
         Else

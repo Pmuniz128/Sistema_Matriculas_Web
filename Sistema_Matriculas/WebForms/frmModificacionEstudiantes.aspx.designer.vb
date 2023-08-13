@@ -10,9 +10,9 @@
 Option Strict On
 Option Explicit On
 
-Namespace FrondEnd
+Namespace FrontEnd
 
-    Partial Public Class frmMantenimientoEmpleado
+    Partial Public Class frmModificacionEstudiantes
 
         '''<summary>
         '''txtCarnet control.
@@ -105,21 +105,30 @@ Namespace FrondEnd
         Protected WithEvents ddlEstado As Global.System.Web.UI.WebControls.DropDownList
 
         '''<summary>
-        '''btnRegistar control.
+        '''btnEliminar control.
         '''</summary>
         '''<remarks>
         '''Auto-generated field.
         '''To modify move field declaration from designer file to code-behind file.
         '''</remarks>
-        Protected WithEvents btnRegistar As Global.System.Web.UI.WebControls.Button
+        Protected WithEvents btnEliminar As Global.System.Web.UI.WebControls.Button
 
         '''<summary>
-        '''gvCursos control.
+        '''btnModificar control.
         '''</summary>
         '''<remarks>
         '''Auto-generated field.
         '''To modify move field declaration from designer file to code-behind file.
         '''</remarks>
-        Protected WithEvents gvCursos As Global.System.Web.UI.WebControls.GridView
+        Protected WithEvents btnModificar As Global.System.Web.UI.WebControls.Button
+
+        '''<summary>
+        '''gvEstudiante control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents gvEstudiante As Global.System.Web.UI.WebControls.GridView
     End Class
 End Namespace

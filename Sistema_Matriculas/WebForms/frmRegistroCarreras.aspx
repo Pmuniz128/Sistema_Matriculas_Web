@@ -1,4 +1,5 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="frmRegistroCarreras.aspx.vb" Inherits="Sistema_Matriculas.frmRegistroCarreras" %>
+﻿<%@ Page Title="Registro de Carreras" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="frmRegistroCarreras.aspx.vb" Inherits="FrontEnd.frmRegistroCarreras" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 <!DOCTYPE html>
 

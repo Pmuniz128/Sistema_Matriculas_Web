@@ -122,6 +122,15 @@ Partial Public Class SiteMaster
     Protected WithEvents Contact As Global.System.Web.UI.HtmlControls.HtmlAnchor
 
     '''<summary>
+    '''lknCerrarSesion control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lknCerrarSesion As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
     '''MainContent control.
     '''</summary>
     '''<remarks>

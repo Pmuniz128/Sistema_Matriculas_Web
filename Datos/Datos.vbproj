@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArchivosXml.vb" />
+    <Compile Include="DatosCursos.vb" />
     <Compile Include="DatosEstudiantes.vb" />
     <Compile Include="DatosFuncionarios.vb" />
     <Compile Include="DatosLogin.vb" />
