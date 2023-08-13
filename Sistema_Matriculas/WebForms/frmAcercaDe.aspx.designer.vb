@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class frmPrueba
+Partial Public Class frmAcercaDe
 
     '''<summary>
     '''form1 control.

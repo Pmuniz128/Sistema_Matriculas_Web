@@ -94,6 +94,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Persona.vb" />
+    <Compile Include="Seguridad.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -116,10 +117,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DatosSQL\DatosSQL.vbproj">
-      <Project>{4ed6d125-7d02-4da3-a6ce-2182651e35e7}</Project>
-      <Name>DatosSQL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Datos\Datos.vbproj">
       <Project>{3081ef73-6818-4e7b-b72c-2eeeb810fabd}</Project>
       <Name>Datos</Name>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="frmPrueba.aspx.vb" Inherits="Sistema_Matriculas.frmPrueba" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="frmConfirmacionCursos.aspx.vb" Inherits="Sistema_Matriculas.frmConfirmacionCursos" %>
 
 <!DOCTYPE html>
 
