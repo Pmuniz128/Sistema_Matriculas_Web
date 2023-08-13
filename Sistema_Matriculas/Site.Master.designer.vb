@@ -14,6 +14,114 @@ Option Explicit On
 Partial Public Class SiteMaster
 
     '''<summary>
+    '''login control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents login As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''MantenimientoFuncionarios control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MantenimientoFuncionarios As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''MatriculaEstudiantes control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MatriculaEstudiantes As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''ModificacionCarreras control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ModificacionCarreras As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''ModificacionCursos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ModificacionCursos As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''ModificacionEstudiantes control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ModificacionEstudiantes As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''RegistroCarreras control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegistroCarreras As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''RegistroCursos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegistroCursos As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''RegistroEstudiantes control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegistroEstudiantes As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''ConfirmacionCursos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ConfirmacionCursos As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''ConsultaMaterias control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ConsultaMaterias As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''Contact control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Contact As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
     '''MainContent control.
     '''</summary>
     '''<remarks>

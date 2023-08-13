@@ -77,7 +77,7 @@ Public Class Estudiante
     End Property
 
     Public Function Leer(rutaArchivo As String) As DataTable
-        Dim iEstudiantes As New Datos.DatosEstudiantes
+        Dim iEstudiantes As New Datos.Estudiantes
         Return iEstudiantes.Leer()
     End Function
 

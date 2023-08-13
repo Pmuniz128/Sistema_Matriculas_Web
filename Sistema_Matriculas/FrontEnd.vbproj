@@ -46,6 +46,9 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.6.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -65,9 +68,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="AspNet.ScriptManager.jQuery">
-      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ScriptManager.MSAjax">
       <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
@@ -128,6 +128,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="WebForms\frmAcercaDe.aspx" />
+    <Content Include="WebForms\frmConfirmacionCursos.aspx" />
+    <Content Include="WebForms\frmConsultaMaterias.aspx" />
+    <Content Include="WebForms\frmMantenimientoFuncionarios.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -149,11 +158,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="FrmBienvenida.aspx" />
-    <Content Include="FrmLogin_Registrar.aspx" />
-    <Content Include="FrmLogin_Rest_Pass.aspx" />
-    <Content Include="frmPrueba.aspx" />
+    <Content Include="WebForms\FrmLogin_Registrar.aspx" />
+    <Content Include="WebForms\FrmLogin_Rest_Pass.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="FrmLogin.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -182,11 +189,14 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.4.1.js" />
-    <Content Include="Scripts\jquery-3.4.1.min.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="WebForms\frmMatriculaEstudiantes.aspx" />
+    <Content Include="WebForms\frmModificacionCarreras.aspx" />
+    <Content Include="WebForms\frmModificacionCursos.aspx" />
+    <Content Include="WebForms\frmModificacionEstudiantes.aspx" />
+    <Content Include="WebForms\frmRegistroCarreras.aspx" />
+    <Content Include="WebForms\frmRegistroCursos.aspx" />
+    <Content Include="WebForms\frmRegistroEstudiantes.aspx" />
+    <Content Include="WebForms\Login.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
@@ -214,6 +224,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="WebForms\frmAcercaDe.aspx.designer.vb">
+      <DependentUpon>frmAcercaDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmAcercaDe.aspx.vb">
+      <DependentUpon>frmAcercaDe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmConfirmacionCursos.aspx.designer.vb">
+      <DependentUpon>frmConfirmacionCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmConfirmacionCursos.aspx.vb">
+      <DependentUpon>frmConfirmacionCursos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmConsultaMaterias.aspx.designer.vb">
+      <DependentUpon>frmConsultaMaterias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmConsultaMaterias.aspx.vb">
+      <DependentUpon>frmConsultaMaterias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmMantenimientoFuncionarios.aspx.designer.vb">
+      <DependentUpon>frmMantenimientoFuncionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmMantenimientoFuncionarios.aspx.vb">
+      <DependentUpon>frmMantenimientoFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
@@ -243,36 +281,22 @@
       <DependentUpon>FrmBienvenida.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="FrmLogin_Registrar.aspx.designer.vb">
+    <Compile Include="WebForms\FrmLogin_Registrar.aspx.designer.vb">
       <DependentUpon>FrmLogin_Registrar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogin_Registrar.aspx.vb">
+    <Compile Include="WebForms\FrmLogin_Registrar.aspx.vb">
       <DependentUpon>FrmLogin_Registrar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="FrmLogin_Rest_Pass.aspx.designer.vb">
+    <Compile Include="WebForms\FrmLogin_Rest_Pass.aspx.designer.vb">
       <DependentUpon>FrmLogin_Rest_Pass.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogin_Rest_Pass.aspx.vb">
+    <Compile Include="WebForms\FrmLogin_Rest_Pass.aspx.vb">
       <DependentUpon>FrmLogin_Rest_Pass.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="frmPrueba.aspx.designer.vb">
-      <DependentUpon>frmPrueba.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmPrueba.aspx.vb">
-      <DependentUpon>frmPrueba.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLogin.aspx.designer.vb">
-      <DependentUpon>FrmLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLogin.aspx.vb">
-      <DependentUpon>FrmLogin.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -314,6 +338,62 @@
     <Compile Include="Site.Mobile.Master.designer.vb">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebForms\frmMatriculaEstudiantes.aspx.designer.vb">
+      <DependentUpon>frmMatriculaEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmMatriculaEstudiantes.aspx.vb">
+      <DependentUpon>frmMatriculaEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmModificacionCarreras.aspx.designer.vb">
+      <DependentUpon>frmModificacionCarreras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmModificacionCarreras.aspx.vb">
+      <DependentUpon>frmModificacionCarreras.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmModificacionCursos.aspx.designer.vb">
+      <DependentUpon>frmModificacionCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmModificacionCursos.aspx.vb">
+      <DependentUpon>frmModificacionCursos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmModificacionEstudiantes.aspx.designer.vb">
+      <DependentUpon>frmModificacionEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmModificacionEstudiantes.aspx.vb">
+      <DependentUpon>frmModificacionEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmRegistroCarreras.aspx.designer.vb">
+      <DependentUpon>frmRegistroCarreras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmRegistroCarreras.aspx.vb">
+      <DependentUpon>frmRegistroCarreras.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmRegistroCursos.aspx.designer.vb">
+      <DependentUpon>frmRegistroCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmRegistroCursos.aspx.vb">
+      <DependentUpon>frmRegistroCursos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\frmRegistroEstudiantes.aspx.designer.vb">
+      <DependentUpon>frmRegistroEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\frmRegistroEstudiantes.aspx.vb">
+      <DependentUpon>frmRegistroEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -337,8 +417,8 @@
     <Content Include="Site.Mobile.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -348,6 +428,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{d18dba2d-2f65-4c8c-9b74-56e1f8c2c0a1}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.vbproj">
+      <Project>{92d59c4e-961b-4933-96a9-23bd7701db6c}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

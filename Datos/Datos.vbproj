@@ -123,10 +123,6 @@
       <Project>{d18dba2d-2f65-4c8c-9b74-56e1f8c2c0a1}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sistema_Matriculas\FrontEnd.vbproj">
-      <Project>{cd8e53d2-b177-494b-ae08-1ceef98e43d7}</Project>
-      <Name>FrontEnd</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
