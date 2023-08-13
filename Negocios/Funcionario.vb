@@ -2,7 +2,8 @@
 Imports System.Xml
 
 Public Class Funcionario
-    Inherits Persona
+
+#Region "Propiedades"
 
     Private strEmail As String
     Public Property email() As String
@@ -14,25 +15,57 @@ Public Class Funcionario
         End Set
     End Property
 
-    Private strContraseña As String
-    Public Property contraseña() As String
+    Private strIdentificacion As String
+    Public Property Identificacion As String
         Get
-            Return strContraseña
+            Return strIdentificacion
         End Get
-        Set(ByVal value As String)
-            strContraseña = value
+        Set(value As String)
+            strIdentificacion = value
         End Set
     End Property
 
-    Private blnEstado As String
-    Public Property estado() As String
+    Private strnombreCompleto As String
+    Public Property NombreCompleto As String
         Get
-            Return blnEstado
+            Return strnombreCompleto
         End Get
-        Set(ByVal value As String)
-            blnEstado = value
+        Set(value As String)
+            strnombreCompleto = value
         End Set
     End Property
+
+    Private strUsuario As String
+    Public Property Usuario As String
+        Get
+            Return strUsuario
+        End Get
+        Set(ByVal value As String)
+            strUsuario = value
+        End Set
+    End Property
+
+    Private strClave As String
+    Public Property Clave As String
+        Get
+            Return strClave
+        End Get
+        Set(ByVal value As String)
+            strClave = value
+        End Set
+    End Property
+
+    Private strEstado As String
+    Public Property Estado As String
+        Get
+            Return strEstado
+        End Get
+        Set(ByVal value As String)
+            strEstado = value
+        End Set
+    End Property
+
+#End Region
 
 
 End Class
