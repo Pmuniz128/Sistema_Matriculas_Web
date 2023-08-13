@@ -7,7 +7,6 @@ Imports Entidades
 
 Public Class Estudiante
 
-
 #Region "Propiedades"
     Private strCarnet As String
     Public Property Carnet() As String
@@ -104,9 +103,9 @@ Public Class Estudiante
 
 #End Region
 
-    Public Function Leer(rutaArchivo As String) As DataTable
-        Dim iEstudiantes As New Datos.DatosEstudiantes
-        Return iEstudiantes.Leer()
-    End Function
+    ''Public Function Leer(rutaArchivo As String) As DataTable
+    '' Dim iEstudiantes As New Datos.DatosEstudiantes
+    ''Return iEstudiantes.Leer()
+    ''End Function 
 
 End Class

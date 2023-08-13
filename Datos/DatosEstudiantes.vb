@@ -18,7 +18,6 @@ Public Class Estudiantes
             .Add(New SqlParameter("@FechaNacimiento", estudiante.FechaNacimiento))
             .Add(New SqlParameter("@DireccionExacta", estudiante.DireccionExacta))
             .Add(New SqlParameter("@Beca", estudiante.Beca))
-
         End With
 
         Dim iConexion As New DatosSQL.ConexionSQL

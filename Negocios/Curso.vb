@@ -1,4 +1,4 @@
-﻿Public Class Cursos
+﻿Public Class Curso
 
 #Region "Propiedades"
     Private strcodigoCurso As String

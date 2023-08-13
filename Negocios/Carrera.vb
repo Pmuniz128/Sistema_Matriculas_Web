@@ -1,4 +1,4 @@
-﻿Public Class Carreras
+﻿Public Class Carrera
 
 #Region "Propiedades"
     Private strcodigoCarrera As String

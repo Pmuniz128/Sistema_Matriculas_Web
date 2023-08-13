@@ -66,6 +66,4 @@ Public Class Funcionario
     End Property
 
 #End Region
-
-
 End Class
