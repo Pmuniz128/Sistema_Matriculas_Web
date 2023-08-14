@@ -9,10 +9,7 @@
 
 Option Strict On
 Option Explicit On
-
-Namespace FrontEnd
-
-    Partial Public Class frmRegistroCursos
+Partial Public Class frmRegistroCursos
 
         '''<summary>
         '''txtIDCurso control.
@@ -121,5 +118,4 @@ Namespace FrontEnd
         '''To modify move field declaration from designer file to code-behind file.
         '''</remarks>
         Protected WithEvents gvCursos As Global.System.Web.UI.WebControls.GridView
-    End Class
-End Namespace
+End Class
