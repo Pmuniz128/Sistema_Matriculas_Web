@@ -45,11 +45,12 @@
         </div>
      <div class="row">
         <div class="col-12">
-            <asp:GridView ID="gvCursos" runat="server" OnSelectedIndexChanged="gvCursos_SelectedIndexChanged">
+            <asp:GridView ID="gvCarreras" runat="server" OnSelectedIndexChanged="gvCarreras_SelectedIndexChanged">
                 <Columns>
                     <asp:CommandField SelectText="Seleccionar" ShowSelectButton="True"></asp:CommandField>
                 </Columns>
             </asp:GridView>
         </div>
     </div>
+           </div>
 </asp:Content>
