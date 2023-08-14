@@ -28,9 +28,8 @@ Public Class DatosCarreras
                 New SqlParameter("@CodigoCurso", carrera.ID_CARRERA),
                 New SqlParameter("@Nombre", carrera.DES_NOMBRE),
                 New SqlParameter("@Grado", carrera.DES_GRADO),
-                New SqlParameter("@Estado", carrera.DES_ESTADO),
+                New SqlParameter("@Estado", carrera.DES_ESTADO)
             }
-
             Dim idatosSql As New DatosSQL.ConexionSQL
             idatosSql.EjecutarSP(strNombreSP, listaParametros)
 

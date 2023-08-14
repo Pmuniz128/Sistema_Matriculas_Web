@@ -10,9 +10,9 @@
 Option Strict On
 Option Explicit On
 
-Namespace FrontEnd
+'Namespace FrontEnd
 
-    Partial Public Class frmRegistroCarreras
+Partial Public Class frmRegistroCarreras
 
         '''<summary>
         '''Control txtIDCarrera.
@@ -60,12 +60,12 @@ Namespace FrontEnd
         Protected WithEvents btnRegistar As Global.System.Web.UI.WebControls.Button
 
         '''<summary>
-        '''Control gvCursos.
+        '''Control gvCarreras.
         '''</summary>
         '''<remarks>
         '''Campo generado automáticamente.
         '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         '''</remarks>
-        Protected WithEvents gvCursos As Global.System.Web.UI.WebControls.GridView
+        Protected WithEvents gvCarreras As Global.System.Web.UI.WebControls.GridView
     End Class
-End Namespace
+'End Namespace
