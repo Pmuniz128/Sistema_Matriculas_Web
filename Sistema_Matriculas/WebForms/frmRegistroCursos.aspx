@@ -69,7 +69,6 @@
            <label for="ID_CARRERA">ID Carrera</label>
            <asp:TextBox ID="txt_IDCarrera" runat="server" placeholder="ID Carrera" class="form-control" required ="required"></asp:TextBox>
         </div>
-
      <div class="row mt-4 mb-4">
         <!-- Columna  -->
         <div class="col-4">
@@ -81,11 +80,7 @@
                 <Columns>
                     <asp:CommandField SelectText="Seleccionar" ShowSelectButton="True"></asp:CommandField>
                 </Columns>
-
-
             </asp:GridView>
         </div>
-
     </div>
-    
 </asp:Content>

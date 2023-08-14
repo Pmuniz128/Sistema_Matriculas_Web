@@ -1,5 +1,9 @@
 ﻿Public Class Carreras
 
+#Region "Variables"
+    Private idatos As New Datos.DatosCarreras
+#End Region
+
 #Region "Propiedades"
     Private strcodigoCarrera As String
     Public Property CodigoCarrera() As String
@@ -40,5 +44,18 @@
             strestadoCarrera = value
         End Set
     End Property
+#End Region
+
+#Region "Métodos"
+    Public Sub mantenimiento(ByVal opcion As Short, ByVal Carrera As Entidades.Carrera)
+        idatos.mantenimientoCarrerasDatos(opcion, Carrera)
+
+    End Sub
+
+    Public Function consultaGeneralNegocios() As DataTable
+        Dim dt As DataTable = idatos.consultaGeneralCarrerasDatos()
+        Return dt
+
+    End Function
 #End Region
 End Class

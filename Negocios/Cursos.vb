@@ -1,16 +1,8 @@
 ﻿Public Class Cursos
 
+#Region "Variables"
     Private idatos As New Datos.DatosCursos
-    Public Sub mantenimiento(ByVal opcion As Short, ByVal Curso As Entidades.Cursos)
-        idatos.mantenimientoCursosDatos(opcion, Curso)
-
-    End Sub
-
-    Public Function consultaGeneralNegocios() As DataTable
-        Dim dt As DataTable = idatos.consultaGeneralCursosDatos()
-        Return dt
-
-    End Function
+#End Region
 
 #Region "Propiedades"
     Private strcodigoCurso As String
@@ -102,6 +94,18 @@
             intcostoCurso = value
         End Set
     End Property
+#End Region
 
+#Region "Métodos"
+    Public Sub mantenimiento(ByVal opcion As Short, ByVal Curso As Entidades.Cursos)
+        idatos.mantenimientoCursosDatos(opcion, Curso)
+
+    End Sub
+
+    Public Function consultaGeneralNegocios() As DataTable
+        Dim dt As DataTable = idatos.consultaGeneralCursosDatos()
+        Return dt
+
+    End Function
 #End Region
 End Class
