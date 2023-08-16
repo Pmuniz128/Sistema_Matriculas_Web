@@ -1,4 +1,4 @@
-﻿Public Class Cursos
+﻿Public Class Curso
     Property ID_CURSO
     Property DES_NOMBRE
     Property NUM_CREDITOS

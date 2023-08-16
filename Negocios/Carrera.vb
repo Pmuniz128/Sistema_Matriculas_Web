@@ -1,4 +1,4 @@
-﻿Public Class Carreras
+﻿Public Class Carrera
 
 #Region "Variables"
     Private idatos As New Datos.DatosCarreras

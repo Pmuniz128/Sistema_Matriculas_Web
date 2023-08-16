@@ -25,7 +25,7 @@ Public Class frmRegistroCarreras
             eCarrera.DES_GRADO = ddlGrado.Text
             eCarrera.DES_ESTADO = ddlEstado.Text
 
-            Dim iCarrera As New Negocios.Carreras
+            Dim iCarrera As New Negocios.Carrera
             iCarrera.mantenimiento(1, eCarrera)
             ScriptManager.RegisterStartupScript(Me, GetType(Page), "Alerta", "javascript:alert('Se agrego la carrera Exitosamente');", True)
             consultaGeneral()
@@ -39,7 +39,7 @@ Public Class frmRegistroCarreras
 
     'Metodo que le asigna al greadview la informacion ingresada
     Public Sub consultaGeneral()
-        Dim iCarreras As New Negocios.Carreras
+        Dim iCarreras As New Negocios.Carrera
         gvCarreras.DataSource = iCarreras.consultaGeneralNegocios
         gvCarreras.DataBind()
 

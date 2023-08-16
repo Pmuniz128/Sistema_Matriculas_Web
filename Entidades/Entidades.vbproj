@@ -74,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Carrera.vb" />
-    <Compile Include="Cursos.vb" />
+    <Compile Include="Curso.vb" />
     <Compile Include="EstudianteEnt.vb" />
     <Compile Include="FuncionarioEnt.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

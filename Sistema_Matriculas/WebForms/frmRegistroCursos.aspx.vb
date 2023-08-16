@@ -3,7 +3,7 @@
     'Metodo de pagina de carga se encarga de validar si el usuario es existente y redirecciona a la pagina pricipal
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-        Dim eCursos As Entidades.Cursos = CType(Session("Cursos"), Entidades.Cursos)
+        Dim eCursos As Entidades.Curso = CType(Session("Cursos"), Entidades.Curso)
 
         If eCursos Is Nothing Then
             FormsAuthentication.RedirectFromLoginPage("", False)
@@ -15,7 +15,7 @@
     Protected Sub btnRegistar_Click(sender As Object, e As EventArgs)
 
         Try
-            Dim eCurso As New Entidades.Cursos
+            Dim eCurso As New Entidades.Curso
             eCurso.ID_CURSO = txtIDCurso.Text
             eCurso.DES_NOMBRE = txtNombre.Text
             eCurso.NUM_CREDITOS = txtCreditos.Text
@@ -27,7 +27,7 @@
             eCurso.NUM_COSTO = txtCosto.Text
             eCurso.ID_CARRERA = txt_IDCarrera.Text
 
-            Dim iCurso As New Negocios.Cursos
+            Dim iCurso As New Negocios.Curso
             iCurso.mantenimiento(1, eCurso)
             ScriptManager.RegisterStartupScript(Me, GetType(Page), "Alerta", "javascript:alert('Se agrego el Curso Exitosamente');", True)
             consultaGeneral()
@@ -40,7 +40,7 @@
     End Sub
     'Metodo que le asigna al greadview la informacion ingresada
     Public Sub consultaGeneral()
-        Dim icursos As New Negocios.Cursos
+        Dim icursos As New Negocios.Curso
         gvCursos.DataSource = icursos.consultaGeneralNegocios
         gvCursos.DataBind()
 

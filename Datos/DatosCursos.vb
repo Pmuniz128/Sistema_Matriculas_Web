@@ -3,7 +3,7 @@ Imports Entidades
 'Se realiza una clase para que guarde en la BD
 Public Class DatosCursos
     'Se hace una funcion que guarde empleados por medio de la BD
-    Public Sub agregarCurso(ByVal Curso As Entidades.Cursos)
+    Public Sub agregarCurso(ByVal Curso As Entidades.Curso)
 
 
         Try
@@ -23,7 +23,7 @@ Public Class DatosCursos
     End Sub
     'Se hace un metodo que guarde toda la informacion que se necesita de la pagina para guardarla en
     'un SP proceso almacenado
-    Public Sub mantenimientoCursosDatos(ByVal opcion As Short, ByVal curso As Entidades.Cursos)
+    Public Sub mantenimientoCursosDatos(ByVal opcion As Short, ByVal curso As Entidades.Curso)
 
         Dim strNombreSP As String = "SP_MantenimientoCursos"
         Try

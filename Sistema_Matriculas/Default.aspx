@@ -4,8 +4,9 @@
 
         <div class="MATRICULAUTC">
         <h1>BIENVENIDOS AL SISTEMA DE MATRICULAS</h1>
-            <h1><img alt="cuc1" src="C:\Users\Pablo Muñiz\Documents\Cuc\Programacion II\Proyecto Grupal\Sistema_Matricula\Sistema_Matriculas\Referencias\Logo U.png" /></h1>
-            &nbsp;</div>
+            <img src="Imagenes/logo.png" alt ="cuc1" />
+        </div>
+        
         
 
     <div class="row">

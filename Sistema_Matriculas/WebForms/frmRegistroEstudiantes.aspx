@@ -1,4 +1,4 @@
-﻿<%@ Page Title="ModificaCION DE Estudiantes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="frmRegistroEstudiantes.aspx.vb" Inherits="FrontEnd.frmRegistroEstudiantes" %>
+﻿<%@ Page Title="Registro de Estudiantes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="frmRegistroEstudiantes.aspx.vb" Inherits="FrontEnd.frmRegistroEstudiantes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
       <!---Se realiza toda la parte visualy se recolecta los datos que se necesitan ---->
     <h1>Registro de Estudiantes</h1>

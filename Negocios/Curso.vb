@@ -1,4 +1,4 @@
-﻿Public Class Cursos
+﻿Public Class Curso
 
 #Region "Variables"
     Private idatos As New Datos.DatosCursos
@@ -97,7 +97,7 @@
 #End Region
 
 #Region "Métodos"
-    Public Sub mantenimiento(ByVal opcion As Short, ByVal Curso As Entidades.Cursos)
+    Public Sub mantenimiento(ByVal opcion As Short, ByVal Curso As Entidades.Curso)
         idatos.mantenimientoCursosDatos(opcion, Curso)
 
     End Sub
