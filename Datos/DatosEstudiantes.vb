@@ -2,44 +2,68 @@
 Imports System.Data.SqlClient
 
 Public Class Estudiantes
-    Public Sub Grabar(ByVal accion As Integer, estudiante As EstudianteEnt)
-        Dim strNombreSP As String = "GrabarEstudiante"
+    'Se hace una funcion que guarde empleados por medio de la BD
+    Public Sub agregarEstudiante(ByVal Estudiante As Entidades.EstudianteEnt)
 
-        Dim lstParametros As New List(Of SqlParameter)
 
-        With lstParametros
-            .Add(New SqlParameter("@Accion", accion))
-            .Add(New SqlParameter("@CodigoCarnet", estudiante.CodigoCarnet))
-            .Add(New SqlParameter("@Identificacion", estudiante.Identificacion))
-            .Add(New SqlParameter("@NombreCompleto", estudiante.NombreCompleto))
-            .Add(New SqlParameter("@CarrerasMatriculadas", estudiante.CarrerasMatriculadas))
-            .Add(New SqlParameter("@NumTelefono", estudiante.NumeroTelefono))
-            .Add(New SqlParameter("@Email", estudiante.Email))
-            .Add(New SqlParameter("@FechaNacimiento", estudiante.FechaNacimiento))
-            .Add(New SqlParameter("@DireccionExacta", estudiante.DireccionExacta))
-            .Add(New SqlParameter("@Beca", estudiante.Beca))
+        Try
+            Dim consultaSQL As String
+            consultaSQL = $"insert into Estudiante values ('{Estudiante.CodigoCarnet}','{Estudiante.Identificacion}','{ Estudiante.Nombre}','{Estudiante.PrimerApellido}',
+'{Estudiante.SegundoApellido}','{ Estudiante.CarrerasMatriculadas}','{Estudiante.NumeroTelefono}','{Estudiante.Email}','{Estudiante.FechaNacimiento}', '{ Estudiante.DireccionExacta}','{ Estudiante.Beca}' )"
 
-        End With
+            Dim iDatosSQL As New DatosSQL.ConexionSQL
+            iDatosSQL.EjecutarSQL(consultaSQL.ToString)
 
-        Dim iConexion As New DatosSQL.ConexionSQL
-        iConexion.EjecutarSP(strNombreSP, lstParametros)
+        Catch ex As Exception
+            Throw ex
+
+        End Try
+
 
     End Sub
+    'Se hace un metodo que guarde toda la informacion que se necesita de la pagina para guardarla en
+    'un SP proceso almacenado
+    Public Sub mantenimientoEstudianteDatos(ByVal opcion As Short, ByVal estudiante As Entidades.EstudianteEnt)
 
-    Public Function Leer(ByVal Optional Carnet As String = "") As DataTable
-        Dim strNombreSP As String = "LeerEstudiante"
+        Dim strNombreSP As String = "SP_RegistroEstudiantes"
+        Try
+            Dim listaParametros As New List(Of SqlParameter) From {
+                New SqlParameter("@Accion", opcion),
+                New SqlParameter("@CodigoCarnet", estudiante.CodigoCarnet),
+                New SqlParameter("@Identificacion", estudiante.Identificacion),
+                New SqlParameter("@Nombre", estudiante.Nombre),
+                New SqlParameter("@CarrerasMatriculadas", estudiante.CarrerasMatriculadas),
+                New SqlParameter("@NumTelefono", estudiante.NumeroTelefono),
+                New SqlParameter("@Email", estudiante.Email),
+                New SqlParameter("@FechaNacimiento", estudiante.FechaNacimiento),
+                New SqlParameter("@DireccionExacta", estudiante.DireccionExacta),
+                New SqlParameter("@Beca", estudiante.Beca)
+            }
+            Dim idatosSql As New DatosSQL.ConexionSQL
+            idatosSql.EjecutarSP(strNombreSP, listaParametros)
 
-        Dim lstParametros As New List(Of SqlParameter)
 
-        With lstParametros
-            .Add(New SqlParameter("@GetAll", If(String.IsNullOrEmpty(Carnet), 0, 1)))
-            .Add(New SqlParameter("@CodigoCarnet", Carnet))
+        Catch ex As Exception
+            Throw ex
+
+        End Try
 
 
-        End With
+    End Sub
+    'Metodo para realizar consultas generales de la pagina y pueda ser visualizado en un datatable
+    Public Function consultaGeneralEstudianteDatos() As DataTable
 
-        Dim iConexion As New DatosSQL.ConexionSQL
-        Return iConexion.EjecutarSPWithData(strNombreSP, lstParametros)
+        Try
+            Dim consulta As String
+            consulta = "select * from Estudiante"
+            Dim iDatosSQL As New DatosSQL.ConexionSQL
+            Dim dt As DataTable = iDatosSQL.EjecutarSQLWithData(consulta)
+            Return dt
+
+        Catch ex As Exception
+            Throw ex
+
+        End Try
 
     End Function
 End Class

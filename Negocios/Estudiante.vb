@@ -4,9 +4,13 @@ Imports System.Xml
 Imports System.Data
 Imports System.Data.SqlClient
 Imports Entidades
+Imports Datos
 
 Public Class Estudiante
 
+#Region "Variables"
+    Private iEstudiantes As New Datos.Estudiantes
+#End Region
 
 #Region "Propiedades"
     Private strCarnet As String
@@ -104,9 +108,14 @@ Public Class Estudiante
 
 #End Region
 
-    Public Function Leer(rutaArchivo As String) As DataTable
-        Dim iEstudiantes As New Datos.Estudiantes
-        Return iEstudiantes.Leer()
-    End Function
+    Public Sub mantenimiento(ByVal opcion As Short, ByVal Estudiante As Entidades.EstudianteEnt)
+        iEstudiantes.mantenimientoCursosDatos(opcion, Estudiante)
 
+    End Sub
+
+    Public Function consultaGeneralEstudiantes() As DataTable
+        Dim dt As DataTable = iEstudiantes.consultaGeneralEstudiantesDatos()
+        Return dt
+
+    End Function
 End Class

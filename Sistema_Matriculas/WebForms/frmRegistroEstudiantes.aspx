@@ -1,4 +1,4 @@
-﻿<%@ Page Title="ModificaCION DE Estudiantes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="frmRegistroEstudiantes.aspx.vb" Inherits="FrontEnd.frmRegistroEstudiantes" %>
+﻿<%@ Page Title="Modificacion DE Estudiantes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="frmRegistroEstudiantes.aspx.vb" Inherits="FrontEnd.frmRegistroEstudiantes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
       <!---Se realiza toda la parte visualy se recolecta los datos que se necesitan ---->
     <h1>Registro de Estudiantes</h1>
@@ -19,20 +19,14 @@
        </div>
          <!---Columna--->
         <div class="col-3">
-           <label for="Nombre">Nombre</label>
-           <asp:TextBox ID="txtNombre" runat="server" placeholder="Nombre" class="form-control" required="required"></asp:TextBox>
+           <label for="Nombre">Nombre Completo</label>
+           <asp:TextBox ID="txtNombre" runat="server" placeholder="Nombre Completo" class="form-control" required="required"></asp:TextBox>
         </div>
-         <!---Columna--->
-        <div class="col-3">
-           <label for="PrimerApellido">Primer Apellido</label>
-           <asp:TextBox ID="txtPrimerApellido" runat="server" placeholder="Primer Apellido" class="form-control" required ="required"></asp:TextBox>
+
+        <div class="form-outline datetimepicker">
+             <label for="dtpFecha" class="form-label">Fecha de Nacimiento</label>
+            <input type="text" class="form-control" value="22/12/2020" id="dtpFecha" />
         </div>
-         <!---Columna--->
-        <div class="col-3">
-           <label for="SegundoApellido">Segundo Apellido</label>
-           <asp:TextBox ID="txtSegundoApellido" runat="server" placeholder="Segundo Apellido" class="form-control" required="required"></asp:TextBox>
-        </div>
-    </div>
 
     <!---Fila ---->
     <div class ="row">
@@ -40,6 +34,11 @@
         <div class="col-3">
            <label for="Carrera">Carrera</label>
            <asp:TextBox ID="txtCarrera" runat="server" placeholder="Carrera" class="form-control" required="required"></asp:TextBox>
+        </div>
+                <!---Columna--->
+        <div class="col-3">
+           <label for="Direccion">Direccion exacta</label>
+           <asp:TextBox ID="txtDirec" runat="server" placeholder="Direccion exacta" class="form-control" required="required" Width="294px"></asp:TextBox>
         </div>
          <!---Columna--->
         <div class="col-3">
@@ -54,7 +53,12 @@
          <!---Columna--->
         <div class="col-3">
            <label for="Correo">Correo</label>
-           <asp:TextBox ID="txtCorreo" runat="server" placeholder="Correo Electronico" class="form-control" required ></asp:TextBox>
+           <asp:TextBox ID="txtCorreo" runat="server" placeholder="Correo Electronico" class="form-control" required ="required" ></asp:TextBox>
+        </div>
+                 <!---Columna--->
+        <div class="col-3">
+           <label for="Beca">Beca</label>
+           <asp:TextBox ID="txtBeca" runat="server" placeholder="Beca" class="form-control" required ="required" ></asp:TextBox>
         </div>
     </div>
 
@@ -93,6 +97,9 @@
 
     </div>
     
+      </div>
+      </div>
+      </div>
 </asp:Content>
 
 

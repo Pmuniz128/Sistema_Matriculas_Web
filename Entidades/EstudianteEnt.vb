@@ -5,7 +5,12 @@ Public Class EstudianteEnt
 
     Public Property Identificacion As String
 
-    Public Property NombreCompleto As String
+    Public Property Nombre As String
+
+    Public Property PrimerApellido As String
+
+    Public Property SegundoApellido As String
+
 
     Public Property CarrerasMatriculadas As String
 

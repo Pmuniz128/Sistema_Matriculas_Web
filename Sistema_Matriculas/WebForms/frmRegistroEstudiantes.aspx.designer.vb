@@ -10,9 +10,9 @@
 Option Strict On
 Option Explicit On
 
-Namespace FrontEnd
+''Namespace FrontEnd
 
-    Partial Public Class frmRegistroEstudiantes
+Partial Public Class frmRegistroEstudiantes
 
         '''<summary>
         '''txtCarnet control.
@@ -42,24 +42,6 @@ Namespace FrontEnd
         Protected WithEvents txtNombre As Global.System.Web.UI.WebControls.TextBox
 
         '''<summary>
-        '''txtPrimerApellido control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents txtPrimerApellido As Global.System.Web.UI.WebControls.TextBox
-
-        '''<summary>
-        '''txtSegundoApellido control.
-        '''</summary>
-        '''<remarks>
-        '''Auto-generated field.
-        '''To modify move field declaration from designer file to code-behind file.
-        '''</remarks>
-        Protected WithEvents txtSegundoApellido As Global.System.Web.UI.WebControls.TextBox
-
-        '''<summary>
         '''txtCarrera control.
         '''</summary>
         '''<remarks>
@@ -67,6 +49,15 @@ Namespace FrontEnd
         '''To modify move field declaration from designer file to code-behind file.
         '''</remarks>
         Protected WithEvents txtCarrera As Global.System.Web.UI.WebControls.TextBox
+
+        '''<summary>
+        '''txtDirec control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents txtDirec As Global.System.Web.UI.WebControls.TextBox
 
         '''<summary>
         '''txtProyecto control.
@@ -96,6 +87,15 @@ Namespace FrontEnd
         Protected WithEvents txtCorreo As Global.System.Web.UI.WebControls.TextBox
 
         '''<summary>
+        '''txtBeca control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents txtBeca As Global.System.Web.UI.WebControls.TextBox
+
+        '''<summary>
         '''ddlEstado control.
         '''</summary>
         '''<remarks>
@@ -122,4 +122,4 @@ Namespace FrontEnd
         '''</remarks>
         Protected WithEvents gvEstudiante As Global.System.Web.UI.WebControls.GridView
     End Class
-End Namespace
+''End Namespace

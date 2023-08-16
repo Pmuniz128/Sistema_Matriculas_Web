@@ -42,7 +42,7 @@
 
 
 
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-white bg-white">
             <a class="nav-link" runat="server" href="~/">Inicio</a>
             <a class="nav-link" runat="server" id="login" href="~/WebForms/Login.aspx">Login</a>
             <a class="nav-link" runat="server" id="MantenimientoFuncionarios" href="~/WebForms/frmMantenimientoFuncionarios.aspx">Mantenimiento de Funcionarios</a>

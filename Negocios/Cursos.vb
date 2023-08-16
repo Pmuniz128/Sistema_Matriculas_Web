@@ -102,7 +102,7 @@
 
     End Sub
 
-    Public Function consultaGeneralNegocios() As DataTable
+    Public Function consultaGeneralCursos() As DataTable
         Dim dt As DataTable = idatos.consultaGeneralCursosDatos()
         Return dt
 
