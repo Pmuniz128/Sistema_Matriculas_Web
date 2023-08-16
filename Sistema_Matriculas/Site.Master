@@ -41,7 +41,6 @@
 
 
 
-
         <nav class="navbar navbar-light bg-light">
             <a class="nav-link" runat="server" href="~/">Inicio</a>
             <a class="nav-link" runat="server" id="login" href="~/WebForms/Login.aspx">Login</a>
