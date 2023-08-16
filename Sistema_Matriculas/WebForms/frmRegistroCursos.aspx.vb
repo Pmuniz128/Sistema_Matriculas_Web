@@ -41,13 +41,13 @@
     'Metodo que le asigna al greadview la informacion ingresada
     Public Sub consultaGeneral()
         Dim icursos As New Negocios.Cursos
-        gvCursos.DataSource = icursos.consultaGeneralNegocios
+        gvCursos.DataSource = icursos.consultaGeneralCursos
         gvCursos.DataBind()
 
     End Sub
     'Asocia el grid a cada columna , fila la informacion para que se vea ordenada
 
-    Protected Sub gvEmpleado_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Protected Sub gvCursos_SelectedIndexChanged(sender As Object, e As EventArgs)
 
         txtIDCurso.ReadOnly = True
 
